@@ -29,10 +29,15 @@ Public source for the **$STONKBROKER** (`STONKBROKER`) fixed-supply ERC-20 on **
 
 ## Build
 
+OpenZeppelin Contracts is a git submodule pinned at v5.0.2 (`lib/openzeppelin-contracts`).
+
 ```bash
-forge install OpenZeppelin/openzeppelin-contracts --no-commit
+git clone --recurse-submodules https://github.com/Clutch-L4bs/stonkbroker-erc20.git
+cd stonkbroker-erc20
 forge build
 ```
+
+In an existing clone, run `git submodule update --init` before `forge build`.
 
 ## License
 
